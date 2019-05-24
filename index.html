@@ -1,7 +1,34 @@
-<h1>QQ群每日答题</h1>
-<h2>QQ1913500655</h2>
-<h3>同学群专属<h3>
-<hr />
-  <p>目录</p>
-  <hr />
-<a href="2019524.html">2019年5月24日</a>
+<form method="post" action="nmsl" name="form" onsubmit="checkpost()">
+
+<label for="name">用户名：</label>
+
+<input type="text" name="name" id="name" />
+
+<br />
+
+<label for="pw">密码：</label>
+
+<input type="password" name="pw" id="pw" />
+
+<br />
+
+<input type="submit" value="提交" />
+
+</form>
+
+<script>
+
+function checkpost(){
+
+if(document.forms[5].name.value=="nmsl"&&document.forms[5].pw.value==" nmsl"){
+
+window.location="./nmsl.html";
+}else{
+
+alert("用户名或密码不正确！")
+return false;
+
+}
+}
+
+</script>
